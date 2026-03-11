@@ -17,6 +17,7 @@ filtered_movies = df[df["Genres"] == selected_genre]
 
 # Display filtered movies
 st.subheader(f"Movies in Genre: {selected_genre}")
+st.write(f"{len(filtered_movies)} movies found")  # ← add this
 st.dataframe(filtered_movies)
 
 # Bar chart of movie count per genre
