@@ -10,14 +10,14 @@ st.title("🎬 Film Discovery App 🎬")
 
 # Sidebar - Genre selection
 genre_list = df["Genres"].unique()
-selected_genre = st.sidebar.selectbox("Select a genre:", genre_list)
+selected_genre = st.selectbox("Select a genre:", genre_list)
 
 # Filter movies by selected genre
 filtered_movies = df[df["Genres"] == selected_genre]
 
 # Display filtered movies
 st.subheader(f"Movies in Genre: {selected_genre}")
-st.write(f"{len(filtered_movies)} movies found")  # ← add this
+st.write(f"{len(filtered_movies)} movies found")
 st.dataframe(filtered_movies)
 
 # Bar chart of movie count per genre
