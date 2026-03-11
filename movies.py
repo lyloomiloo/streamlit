@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 #Load the dataset
-df = pd.read_csv("movies.csv")
+df = pd.read_csv("movies_clean.csv")
 
 #Streamlit app title
 st.title("🎬 Movie Explorer App")
