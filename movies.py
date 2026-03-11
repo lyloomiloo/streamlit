@@ -9,11 +9,11 @@ df = pd.read_csv("movies_clean.csv")
 st.title("🎬 Movie Explorer App")
 
 # Sidebar - Genre selection
-genre_list = df["Genre"].unique()
+genre_list = df["Genres"].unique()
 selected_genre = st.sidebar.selectbox("Select a genre:", genre_list)
 
 # Filter movies by selected genre
-filtered_movies = df[df["Genre"] == selected_genre]
+filtered_movies = df[df["Genres"] == selected_genre]
 
 # Display filtered movies
 st.subheader(f"Movies in Genre: {selected_genre}")
