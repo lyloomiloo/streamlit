@@ -25,7 +25,7 @@ st.subheader("Movies per Genre")
 genre_counts = df["Genres"].value_counts()
 
 fig, ax = plt.subplots()
-genre_counts.plot(kind="bar", ax=ax)
+genre_counts.plot(kind="bar", ax=ax, color="white")
 fig.patch.set_facecolor("black")
 ax.set_facecolor("black")
 ax.tick_params(colors="white")
