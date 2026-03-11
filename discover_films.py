@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 df = pd.read_csv("movies_clean.csv")
 
 # Streamlit app title
-st.title("🎬 Movie Explorer App")
+st.title("🎬 Film Discovery App 🎬")
 
 # Sidebar - Genre selection
 genre_list = df["Genres"].unique()
