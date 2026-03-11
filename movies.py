@@ -21,7 +21,7 @@ st.dataframe(filtered_movies)
 
 # Bar chart of movie count per genre
 st.subheader("Movies per Genre")
-genre_counts = df["genres"].value_counts()
+genre_counts = df["Genres"].value_counts()
 
 fig, ax = plt.subplots()
 genre_counts.plot(kind="bar", ax=ax)
